@@ -1,0 +1,53 @@
+Collections in Java
+====================
+*) Used to represent a large number of variales.
+*) We can use arrays also but arrays have certain restrictions :-
+	1)arrays have a fixed size
+	2)arrays can hold only homogenous objects. 
+
+		Eg: Student[] s = new Student[1000];
+			s[0]= new Student();
+			s[1]= new Customer(); // this will lead to compile time error
+
+		but we can use Object type arrays .
+			Object[] a = new Object[1000];
+			a[0]= new Customer()://
+			a[1] = new Student();// both these will work as these classe extend the object class .
+	3)There is no underlying datastructure for the array so we cant expect any readymade methods.All kinds of functions on the arrays should be coded by the developer . But in the case of collections there are many readymade methods.
+	
+Collections Advantages:-
+======================
+*) Collections are growable in nature.Based on the requirement we can increase and decrease the size.
+*) Collections can hold both heterogeneous and homogenous elements.
+*) Every collection class is develped based on some standard dataStrucutre,Hence readymade metod support is avaialble for most of the requirements.
+
+
+Collections vs arrays
+=====================
+*) If we know the size of the elements in advance it is recommended to go for the arrays.
+consider the size of the arraylist to be n if we need to add the n+1 th element to the arraylist then we internally a bigger arraylist is created and then all the values from the old one are copied to the new one and the n+1 th element is added and then the reference variable will be pointig to the new array list. This is a very time taking process and involves a lot of copying of data from the new list to old one just for adding a single elmement into the list.Thus collections have huge effect on the performance.
+*) wrt memory arrays are not recommended to use while collections are recommended.
+*) wrt performance arrays are recommended but not the collections.
+*) Arrays can hold primitives and objects But the collections can hold only the Objects but not the primitives.(Int primitive,Integer object).
+
+
+Collection:-
+==========
+Representing a group of Individual Objects as a single entity is know as a collection.
+
+Collection Framework:-
+====================
+It defines several classes and interfaces which can be used to define a group of Individual Objects as a single entity.
+
+Collection is an interface where as collections is a class
+
+
+9 Key interfaces of collection Framework:-
+=========================================
+1) Collection(I):- It defines the most common methods which are applicable to any collection object.It is also considered as the root interface of the collections Framework.It contain the basic methods of the collections such as add remove and isEmpty which are used by all kinds of collection classes.
+	note:- there are no concrete class which implements the collection interface directly.
+2) 
+ 
+ 
+ 
+ 
